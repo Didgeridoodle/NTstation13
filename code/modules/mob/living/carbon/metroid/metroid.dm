@@ -55,6 +55,7 @@
 
 /mob/living/carbon/slime/New()
 	create_reagents(100)
+	verbs += /obj/mecha/verb/move_inside
 	spawn (0)
 		number = rand(1, 1000)
 		name = "[colour] [is_adult ? "adult" : "baby"] slime ([number])"
